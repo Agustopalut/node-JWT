@@ -1,0 +1,19 @@
+POST http://localhost:3000/login
+Content-Type: application/json
+
+
+{
+    "email" : "agus@gmail.com",
+    "password" : "agus123"
+}
+###
+GET http://localhost:3000/token
+
+###
+GET http://localhost:3000/users
+###
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiYWd1cyIsInVzZXJFbWFpbCI6ImFndXNAZ21haWwuY29tIiwiaWF0IjoxNjY5MjA2NDU5LCJleHAiOjE2NjkyMDY0Nzl9.kUU15U1C1yDGOk_-nJX0neRlTUriIun0efzqH4dXCys
+
+### 
+DELETE http://localhost:3000/logout

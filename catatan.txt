@@ -1,0 +1,8 @@
+httpOnly artinya token nya tidak bisa di akses dari client
+jika sudah mendapatkan aacess token,maka kita sudah dapat login
+
+const token = autHeader && autHeader.split(' ')[1];
+ini artinya adalah,autHeader diebelah kiri bernilai null/tidak ada isinya,sedangkan yang dikanan itu ada nilai nya yaitu token yang kita tangkap dari hasil split sebelumnya;
+
+acces token & refresh token :
+access token , token yang digenerate oleh authorization server, token ini memiliki massa nya sehingga tidak dapat digunakan dalam jangka waktu yang lama. refresh token , token ini digunakan untuk meminta access token yang baru dikarenakan access token yang lama telah expired.
